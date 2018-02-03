@@ -7,15 +7,16 @@
     tools:context="cloud.workingtitle.layoutsandbox.MainActivity">
 
     <TextView
-        android:text="This is where the question text will be displayed."
         android:id="@+id/question_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_blue_light"
         android:lines="3"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+        android:text="This is where the question text will be displayed."
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<!-- Changing the layout_height of the ScrollView affects the horizontal display. -->
+    <!-- Changing the layout_height of the ScrollView affects the horizontal display. -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -29,45 +30,45 @@
             android:orientation="vertical">
 
             <CheckBox
-                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="setting1" />
 
             <CheckBox
-                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="setting2" />
 
             <CheckBox
-                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="setting3" />
 
             <CheckBox
-                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="setting4" />
 
             <CheckBox
-                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="setting5" />
 
             <CheckBox
-                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="setting6" />
 
             <CheckBox
-                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="setting7" />
 
         </LinearLayout>
@@ -75,12 +76,12 @@
     </ScrollView>
 
     <TextView
-        android:text="This area is for the application controls (buttons)."
         android:id="@+id/bottom_controls_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_light"
         android:lines="10"
+        android:text="This area is for the application controls (buttons)."
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         app:layout_constraintBottom_toBottomOf="parent" />
 
